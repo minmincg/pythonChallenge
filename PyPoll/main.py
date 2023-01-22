@@ -6,7 +6,7 @@ with open(output_file, "w") as txt_file:
     with open (csvpath) as csvfile:
         csv_reader=csv.reader(csvfile,delimiter=',')
         csv_header=next(csv_reader)
-        str1="election analysis\n"
+        str1="Election Analysis\n"
         print(str1)
         txt_file.write(str1)
         str2=("------------------\n")

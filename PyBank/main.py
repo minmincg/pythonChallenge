@@ -33,15 +33,7 @@ with open(output_file, "w") as txt_file:
         max_index= changes_list.index(max_val)
         min_index= changes_list.index(min_val)
 
-        # #final info
-        # print("Financial Analysis")
-        # print("----------------------------------")
-        # print(f'Total months: {amount_mon}')
-        # print(f'Total net profit: {total}')
-        # print(f'Average change: {average}')
-        # print(f'Greatest increase in profits: {month_list[max_index]} {max_val}')
-        # print(f'Greatest decrease in profits: {month_list[min_index]} {min_val}')
-
+       
         str1=('Financial Analysis\n')
         print(str1)
         txt_file.write(str1)
