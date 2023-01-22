@@ -1,6 +1,6 @@
 Election Analysis
 ------------------
-369711
+total votes: 369711
 ------------------
 Charles Casper Stockham: 23.0% (85,213)
 Diana DeGette: 73.8% (272,892)
