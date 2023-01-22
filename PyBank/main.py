@@ -2,7 +2,7 @@ import os
 import csv
 
 csvpath = os.path.join("Resources","budget_data.csv")
-output_file = os.path.join("analysis","election_analysis.txt")
+output_file = os.path.join("analysis","budget_analysis.txt")
 with open(output_file, "w") as txt_file:
 
     with open(csvpath) as csvfile:
@@ -43,16 +43,16 @@ with open(output_file, "w") as txt_file:
         str3=(f'Total months: {amount_mon}\n')
         print(str3)
         txt_file.write(str3)
-        str4=(f'Total net profit: {total}\n')
+        str4=(f'Total: ${total}\n')
         print(str4)
         txt_file.write(str4)
-        str5=(f'Average change: {average}\n')
+        str5=(f'Average change: ${average}\n')
         print(str5)
         txt_file.write(str5)
-        str6=(f'Greatest increase in profits: {month_list[max_index]} {max_val}\n')
+        str6=(f'Greatest increase in profits: {month_list[max_index]}(${max_val})\n')
         print(str6)
         txt_file.write(str6)
-        str7=(f'Greatest decrease in profits: {month_list[min_index]} {min_val}\n')
+        str7=(f'Greatest decrease in profits: {month_list[min_index]} (${min_val})\n')
         print(str7)
         txt_file.write(str7)
 
