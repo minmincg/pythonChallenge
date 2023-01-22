@@ -25,9 +25,9 @@ with open(output_file, "w") as txt_file:
                 candidates_list.append(candidate)
                 votes_dict[candidate]=0
             votes_dict[candidate]+=1
-        print(total_votes)
+        print(f'total votes: {total_votes}')
         
-        txt_file.write(str(total_votes))
+        txt_file.write(f'total votes: {total_votes}')
         txt_file.write("\n")
         print('------------------')
         txt_file.write(str2)
